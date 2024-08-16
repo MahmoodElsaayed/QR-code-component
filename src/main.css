@@ -25,4 +25,61 @@ body {
     min-height: 100vh;
     font: normal 1.6rem var(--primary-fonts);
     background: var(--Slate-300) no-repeat center center / cover fixed;
+
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 350px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: var(--White);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.QR-img {
+    height: 330px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background: url('./assets/images/image-qr-code.png') no-repeat center center / cover;
+}
+
+.QR-info {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.QR-img, .QR-info, .QR-info>* {
+    margin-bottom: 25px;
+}
+
+.QR-info h1 {
+    color: var(--Slate-900);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.QR-info p {
+    color: var(--Slate-500);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+    .card-container {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
